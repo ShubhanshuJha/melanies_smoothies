@@ -18,7 +18,10 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT
 st.dataframe(data=my_dataframe, use_container_width=True)
 st.stop()
 
-"""
+import sys
+sys.exit(1)
+
+
 ingredients_list = st.multiselect(
     'Choose up to 5 ingredients',
     my_dataframe,
@@ -47,7 +50,6 @@ if ingredients_list:
         st.success(f'Your Smoothie is ordered, {name_on_order}!', icon="✅")
 
 
-"""
 
 
 
