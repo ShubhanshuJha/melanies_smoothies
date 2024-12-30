@@ -43,7 +43,7 @@ if ingredients_list:
 
 api_ = "https://my.smoothiefroot.com/api/fruit/watermelon"
 smoothiefroot_response = re.get(api_)
-st.text(smoothiefroot_response)
+st.text(smoothiefroot_response.json())
 
 
 
